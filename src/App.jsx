@@ -33,13 +33,13 @@ return d;
 }
 
 function FDRLogo({ size = 44 }) {
+const fontSize = size * 0.38;
 return (
-<svg width={size} height={size} viewBox="0 0 100 100" fill="none">
-<defs><linearGradient id="rg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#e8cfc9"/><stop offset="50%" stopColor="#c9a49a"/><stop offset="100%" stopColor="#a07870"/></linearGradient></defs>
-<text x="2" y="62" fontFamily="Georgia,serif" fontSize="38" fontWeight="bold" fill="url(#rg)" letterSpacing="2">FDR</text>
-<path d="M50 10 L51.5 14 L55 15.5 L51.5 17 L50 21 L48.5 17 L45 15.5 L48.5 14Z" fill="#c9a49a" opacity=".9"/>
-<line x1="2" y1="70" x2="98" y2="70" stroke="url(#rg)" strokeWidth="1" opacity=".4"/>
-</svg>
+<div style={{ width: size, height: size, display: “flex”, flexDirection: “column”, alignItems: “center”, justifyContent: “center”, position: “relative” }}>
+<div style={{ position: “absolute”, top: 2, fontSize: fontSize * 0.35, color: “#c9a49a” }}>✦</div>
+<div style={{ fontSize: fontSize, fontWeight: 900, letterSpacing: “0.15em”, background: “linear-gradient(135deg,#e8cfc9,#c9a49a,#a07870)”, WebkitBackgroundClip: “text”, WebkitTextFillColor: “transparent”, lineHeight: 1, fontFamily: “Georgia,serif” }}>FDR</div>
+<div style={{ width: “90%”, height: 1, background: “linear-gradient(90deg,transparent,#c9a49a,transparent)”, marginTop: 4 }} />
+</div>
 );
 }
 
