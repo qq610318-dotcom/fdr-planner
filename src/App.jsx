@@ -34,12 +34,11 @@ return d;
 
 function FDRLogo({ size = 44 }) {
 return (
-<svg width={size} height={size} viewBox="0 0 120 100" fill="none">
-<defs><linearGradient id="rg" x1="0" y1="0" x2="120" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#e8cfc9"/><stop offset="50%" stopColor="#c9a49a"/><stop offset="100%" stopColor="#a07870"/></linearGradient></defs>
-<text x="4" y="68" fontFamily="Georgia,serif" fontSize="52" fontWeight="bold" fill="url(#rg)" letterSpacing="-1">FDR</text>
-<path d="M60 14 L61.5 18 L65 19.5 L61.5 21 L60 25 L58.5 21 L55 19.5 L58.5 18Z" fill="#c9a49a" opacity=".9"/>
-<path d="M105 34 L106 37 L109 38 L106 39 L105 42 L104 39 L101 38 L104 37Z" fill="#c9a49a" opacity=".6"/>
-<line x1="4" y1="74" x2="116" y2="74" stroke="url(#rg)" strokeWidth="1" opacity=".4"/>
+<svg width={size} height={size} viewBox="0 0 100 100" fill="none">
+<defs><linearGradient id="rg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#e8cfc9"/><stop offset="50%" stopColor="#c9a49a"/><stop offset="100%" stopColor="#a07870"/></linearGradient></defs>
+<text x="2" y="62" fontFamily="Georgia,serif" fontSize="38" fontWeight="bold" fill="url(#rg)" letterSpacing="2">FDR</text>
+<path d="M50 10 L51.5 14 L55 15.5 L51.5 17 L50 21 L48.5 17 L45 15.5 L48.5 14Z" fill="#c9a49a" opacity=".9"/>
+<line x1="2" y1="70" x2="98" y2="70" stroke="url(#rg)" strokeWidth="1" opacity=".4"/>
 </svg>
 );
 }
